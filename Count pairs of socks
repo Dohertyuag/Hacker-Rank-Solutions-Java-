@@ -1,0 +1,12 @@
+int count_pairs[] = new int[101]; //101 because in constraints it is given that 1<=n<=100  
+    for(int i=0; i<n; i++){
+        int x = ar.get(i);
+        count_pairs[x]++;
+    }
+    //int len_pairs = Arrays.toString(count_pairs).length();
+    //System.out.println("len_pairs: "+len_pairs);
+    int total_pairs = 0;
+    for(int i=0; i<101; i++){
+        total_pairs += (int)count_pairs[i]/2;
+    }
+    return total_pairs;

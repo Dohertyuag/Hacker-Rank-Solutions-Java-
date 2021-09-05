@@ -1,1 +1,1 @@
-# Hacker-Rank-Solutions-Java-
+# Hacker-Rank-Solutions-Java

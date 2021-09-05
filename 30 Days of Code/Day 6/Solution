@@ -1,0 +1,25 @@
+import java.util.*;
+
+public class Solution {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt(); //test cases
+        sc.nextLine();
+        for(int i=0; i<t; i++){
+            String str = sc.nextLine();
+            String str_even = "";
+            String str_odd = "";
+            char[] char1 = str.toCharArray();
+            for (int j = 0; j < char1.length; j++) {
+                if (j % 2 == 0) {
+                    str_even += char1[j];
+                } 
+                else {
+                    str_odd += char1[j];
+                }
+            }
+            System.out.println(str_even+" "+str_odd);
+        }
+        sc.close();
+    }
+}
