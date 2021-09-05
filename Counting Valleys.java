@@ -1,3 +1,5 @@
+import java.util.*;
+
 class Result {
     public static int countingValleys(int steps, String path) {
         int v=0;  //valley
@@ -13,4 +15,11 @@ class Result {
         }
         return v;
     }
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        String path = scanner.next();
+        int steps = path.length();
+        System.out.println(countingValleys(steps, path));
+    }
+        
 }
