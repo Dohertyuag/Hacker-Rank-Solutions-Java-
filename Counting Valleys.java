@@ -20,6 +20,6 @@ class Result {
         String path = scanner.next();
         int steps = path.length();
         System.out.println(countingValleys(steps, path));
+        scanner.close();
     }
-        
 }
